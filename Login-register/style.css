@@ -1,0 +1,24 @@
+<style>
+body{
+  background: linear-gradient(135deg, #a18cd1 0%, #8b5cf6 100%);
+  min-height:100vh; display:flex; align-items:center; justify-content:center; padding:20px;
+  font-family: 'Poppins', sans-serif;
+}
+.login-card{
+  background:#fff; border-radius:16px; box-shadow:0 20px 60px rgba(0,0,0,0.15);
+  max-width:1000px; width:100%; display:flex; overflow:hidden;
+}
+.left-form{flex:1; padding:45px 40px;}
+.right-illust{flex:1.2; background:#fcfcff; display:flex; align-items:center; justify-content:center;}
+h3{font-weight:700;} 
+.subtext{color:#6b7280; font-size:14px; margin-bottom:25px;}
+.subtext a{color:#7c3aed; text-decoration:none; font-weight:600;}
+.btn-login{background:#7c3aed; border:none; width:100%; padding:12px; border-radius:8px; color:white; font-weight:600; margin-top:10px;}
+.btn-login:hover{background:#6d28d9;}
+.divider{ text-align:center; color:#9ca3af; font-size:12px; margin:20px 0; position:relative; }
+.divider::before, .divider::after{content:''; position:absolute; top:50%; width:35%; height:1px; background:#e5e7eb;}
+.divider::before{left:0;} .divider::after{right:0;}
+.social-btns{display:flex; gap:12px;}
+.social-btn{flex:1; border:1.5px solid #e5e7eb; background:white; border-radius:8px; padding:10px; font-size:13px;}
+@media(max-width:768px){ .right-illust{display:none;} }
+</style>
