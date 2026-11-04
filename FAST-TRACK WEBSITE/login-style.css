@@ -1,0 +1,130 @@
+/* Page background */
+body {
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #f3f0ff;
+font-family: Arial, sans-serif;
+}
+
+/* Login container */
+.login-card {
+width: 850px;
+min-height: 500px;
+display: flex;
+background: white;
+border-radius: 15px;
+overflow: hidden;
+box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* Form section */
+.left-form {
+width: 55%;
+padding: 45px;
+}
+
+.left-form h3 {
+font-size: 30px;
+font-weight: bold;
+color: #25213b;
+}
+
+.subtext {
+font-size: 13px;
+color: #777;
+}
+
+.subtext a {
+color: #7c3aed;
+text-decoration: none;
+font-weight: bold;
+}
+
+/* Bootstrap input customization */
+.form-control {
+padding: 11px;
+border-radius: 7px;
+}
+
+.form-control {
+border-color: #7c3aed;
+box-shadow: 0 0 5px rgba(124,58,237,0.2);
+}
+
+/* Login button */
+.btn-login {
+width: 100%;
+padding: 12px;
+background: #7c3aed;
+color: white;
+border: none;
+border-radius: 7px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.btn-login {
+background: #6025c5;
+}
+
+/* Divider */
+.divider {
+text-align: center;
+margin: 22px 0;
+color: #999;
+font-size: 12px;
+}
+
+/* Social buttons */
+.social-btns {
+display: flex;
+}
+
+.social-btn {
+width: 100%;
+padding: 10px;
+background: white;
+border: 1px solid #ddd;
+border-radius: 7px;
+cursor: pointer;
+}
+
+.social-btn {
+background: #f5f0ff;
+}
+
+/* Right illustration */
+.right-illust {
+width: 45%;
+background: #ede5ff;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 25px;
+}
+
+.right-illust img {
+width: 100%;
+max-height: 400px;
+object-fit: contain;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+.login-card {
+width: 95%;
+flex-direction: column;
+}
+
+.left-form,
+.right-illust {
+    width: 100%;
+}
+
+.left-form {
+    padding: 30px;
+}
+
+}
