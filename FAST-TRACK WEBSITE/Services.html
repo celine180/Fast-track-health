@@ -1,44 +1,9 @@
 <!doctype html>
-<html lang="en" data-bs-theme="white">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
-</head>  
-<body>
-    <form class="row gx-3 gy-2 align-items-center">
-  <div class=""col-sm-4>
-    <label class="input" for="specificSizeInputName">Name</label>
-    <input type="text" class="form-control" id="specificSizeInputName" placeholder="Allan okello">
-  </div>
-  <div class="col-sm-4">
-    <label class="visually-hidden" for="specificSizeInputGroupUsername">Username</label>
-    <div class="input-group">
-      <div class="input-group-text">email</div>
-      <input type="text" class="form-control" id="specificSizeInputGroupUsername" placeholder="Allanokello256@gmail.com">
-    </div>
-  </div>
-<div class="mb-3">
-<label for="doctorselect" class="form label">select doctor:</label>
-<select class="form select" id="doctorselect" required>
-<option value=""selected disabled>choose  a healthcare professional</option>
-<option value="dr moses">DR.MOSES OPIT-ENT</option>
-<option value="dr ian">DR.IAN NSAMYA-DENTIST</option>
-<option value="dr irene">DR.IRENE AKELLO-ORTHOPEDIC</option>
-<option value="dr asahba">DR.ASAHBA PIUS-GENERAL</option>
-<option value="dr jones">DR.JONES BEN COOK-NUTRITIONIST</option>
-</select>
-</div>
-<div class="mt-4">
-<button type="submit">submit</button>
-</div>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
-  </body>
-</html>
+    <title>Home - Fast Track Clinic</title>
  <style>
         .ucu-bg-dark { background-color:#159888; }
         .ucu-text-gold { color: #37d4af; }
@@ -237,8 +202,61 @@ header.custom-header {
     }
 }
 </style>
-
-
+  </head>
+<nav class="nav nav-pills nav justified">
+  <a class="nav-link active" aria-current="page" href="#">Active</a>
+  <a class="nav-link" href="#">About Us</a>
+  <a class="nav-link" href="#">Link</a>
+  <a class="nav-link disabled" aria-disabled="true">Contacts</a>
+</nav>
+ <body>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous"> 
+<div class="contains-inline">
+  <div class="card-group">
+  <div class="card">
+    <img src="hospital.jpg" class="card-img-top" >
+    <div class="col" id="book appointment">
+      <h4 class="card-title">BOOK APPOINTMENT</h4>
+      <p class="card-text">Book an appointment to see the doctor in person.</p>
+    </div>
+    <div class="card-footer">
+      <small class="fg-2">Available on wednesdays from 8:00am-5:00pm</small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="images.png" class="card-img-top" alt="...">
+    <div class="col" id="medicine refill">
+      <h4 class="card-title">MEDICINE REFILL</h4>
+      <p class="card-text">Running low on medication?Order a quick refill here.</p>
+    </div>
+    <div class="card-footer">
+      <small class="fg-2">Always available </small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="Appo.png" class="card-img-top" alt="...">
+    <div class="col" id="consultations">
+      <h4 class="card-title">CONSULTATIONS</h4>
+      <p class="card-text">Get expert virtual or medical advice from our dedicated clinical team.</p>
+    </div>
+    <div class="card-footer">
+      <small class="fg-2">Available Monday to Sunday from 8:00am to 6:00pm </small>
+    </div>
+  </div>
+  </div>
+</div>
+<div>
+  <label for="exampleFormControlSelect3" class="form-label">Select an option</label>
+  <select class="form-control" id="exampleFormControlSelect3" multiple aria-label="Multiple select example">
+    <option value="book appointment">1.BOOK APPOINTMENT</option>
+    <option value="medicine refill">2.REFILL</option>
+    <option value="consultations">3.CONSULTAIONS</option>
+  </select>
+</div>
+<script src="https://jsdelivr.net"></script>
+<link rel="stylesheet"href="COLOR.css">
+</body>
+</html>
 <style>
 
     /* FOOTER DESIGN */
@@ -322,3 +340,4 @@ footer h6 {
             </section>
         </div>
     </footer>
+
