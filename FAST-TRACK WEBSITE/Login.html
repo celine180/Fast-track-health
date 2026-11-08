@@ -13,18 +13,23 @@
     <p class="subtext">Doesn't have an account yet? <a href="Register.html" target="_blank">Sign Up</a></p>
     <form onsubmit="event.preventDefault(); window.location.href='dashboard.html';"> <!--Prevents page from refreshing after submitting in the login-->
       <div class="mb-3"><!--Creates spaces after the button before the next button-->
-        <label class="form-label small">Email Address</label>
-        <input type="email" class="form-control" placeholder="you@example.com" required>
-      </div>
-      <div class="mb-2">
-        <label class="form-label small">Password <a href="#" style="float:right; font-size:12px; color:#7c3aed; text-decoration:none;">Forgot Password?</a></label>
-        <input type="password" class="form-control" placeholder="Enter 6 character or more" required minlength="6">
-      </div>
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="remember">
-        <label class="form-check-label small text-muted" for="remember">Remember me</label>
-      </div>
-      <button type="submit" class="btn-login">LOGIN</button>
+
+        <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="alwaysFloatingInput" placeholder="name@example.com">
+    <div id="emailHelp" class="form-text">We’ll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+      <label for="alwaysFloatingPassword">Password</label>
+  <input type="password" class="form-control" id="alwaysFloatingPassword" placeholder="••••••••">
+  </div>
+  <div class="mb-3 form-field">
+    <input type="checkbox" id="exampleCheck1" class="check">
+    <label for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn-solid theme-primary">LOGIN</button>
+</form>
       <div class="divider">or login with</div>
       <div class="social-btns">
         <button type="button" class="social-btn" onclick="window.open('https://accounts.google.com/o/oauth2/auth', '_blank')">G Google</button>
@@ -32,9 +37,9 @@
     </form>
     <p class="mt-4 text-center"><a href="homepage.html" target="_blank" style="color:#7c3aed; font-size:12px; text-decoration:none;">← Back to Home</a></p>
   </div>
-  <div class="right-illust">
-    <img src="photo.jpeg" style="max-width:100%;">
-  </div>
+  <figure class="figure align-items-end">
+  <img src="login-image.jpeg" class="img-fluid rounded-3" alt="...">
+  </figure>
 </div>
 <link rel="stylesheet"href="login-style.css">
 </body>
