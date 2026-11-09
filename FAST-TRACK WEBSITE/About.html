@@ -66,7 +66,7 @@
         align-items: start;
     }
 
-  
+
     @media (width >=768px) .grid-layout {
         .grid-template-columns:1fr
     }
@@ -156,65 +156,77 @@
 
 
 <body>
-    <header class="color-blade"></header>
-    <h1>FAST TRACK CLINIC DISPENSARY MODEL</h1>
-    <hr>
-    <p>
-        At <strong>Fast Track Clinic Dispensary Model</strong>, your health is our priority.
-        We believe every life is priceless and deserves quality care. Since 2010,
-        we are team of dedicated professionals about committed to providing fast,
-        confidential, and client-centered services you can trust with 16 years of experience.
-    </p>
-    </header>
+    <section id="about-us">
+        <header class="color-blade"></header>
+        <h1>FAST TRACK CLINIC DISPENSARY MODEL</h1>
+        <hr>
+        <p>
+            At <strong>Fast Track Clinic Dispensary Model</strong>, your health is our priority.
+            We believe every life is priceless and deserves quality care. Since 2010,
+            we are team of dedicated professionals about committed to providing fast,
+            confidential, and client-centered services you can trust with 16 years of experience.
+        </p>
+        </header>
 
-    <div class="image-container"
-    <img src="img.jpg" class="img-fluid" alt="Fast Track Dispensary Model Image">
-    </div>
+        <div class="image-container" <img src="img.jpg" class="img-fluid" alt="Fast Track Dispensary Model Image">
+        </div>
 
 
-    <main class="content">
-        <div class="row">
-            <div class="col-md-4">
-                <div>
+        <main class="content">
+            <div class="row">
+                <div class="col-md-8">
                     <h3>Our Mission & Journey</h3>
                     <p>Extend health services right at your door.</p>
                     <p style="color: #6c648b;">Founded by a highly trained expert team in their first year, first
-                        semester.
-                    </p>
+                        semester.</p>
 
-                    <button class="btn-action">Learn More</button>
+                    <button class="btn btn-primary">Learn More</button>
 
-                </div>
-                <div class="col-md-4">
-                    <div class="card p-3">
-                        Visit Our Webpage
-                    </div>
-                </div>
-                <div class="col">
-                    Column
                 </div>
             </div>
+        </main>
+        <div class="col-md-4">
+            <div class="card p-3">
+                Visit Our Webpage
+            </div>
         </div>
+
         <section class="team-box">
             <p
-                style="margin-top: 0; font-weight: 600; text-transform: uppercase; font-size: 0.85rem; color: #611f69; letter-spacing: 0.5px;">
+                class="margin-top: 0; font-weight: 600; text-transform: uppercase; font-size: 0.85rem; color: #611f69; letter-spacing: 0.5px;">
                 Our Team working</p>
 
-            <ul class="member-list">
-                <li>
-                    <div class="leader-info">
-                        <strong>Celine N.</strong> <span
-                            style="color: #611f69; font-weight: 600; margin-left: 10px;">Team Leader</span>"
-                    </div>
+            <ul class="nav nav-pills nav-pills-vertical">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Member List</a>
                 </li>
-                <li>Treasure.N</li>
-                <li>Brendah</li>
-                <li>Mark</li>
-                <li>Lucky</li>
-                <li>Salim</li>
-
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="leader-info">
+                            <strong>Celine N.</strong> <span
+                                style="color: #611f69; font-weight: 600; margin-left: 10px;">Team Leader</span>"
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Treasure.N</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Brendah</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mark</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Lucky</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Salim</a>
+                </li>
             </ul>
+
         </section>
+    </section>
 
 </body>
 
