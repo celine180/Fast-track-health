@@ -1,0 +1,135 @@
+    <style>
+        .ucu-bg-dark { background-color:#159888; }
+        .ucu-text-gold { color: #37d4af; }
+        .ucu-header-logo { max-height: 50px; width: auto; }
+    </style>
+    
+    <style>
+
+header.custom-header {
+    background-color:#ffffff;
+    border-bottom: 1px solid #e8edf2;
+    box-shadow: 0 3px 15px rgba(11, 29, 58, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+/* UNIVERSITY NAME */
+.custom-header .university-name {
+    color: #0b1d3a;
+    font-size: 19px;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+}
+
+/* UNIVERSITY TAGLINE */
+.custom-header .university-tagline {
+    color: #b17b45;
+    font-size: 11px;
+    font-weight: 600;
+    margin-top: 3px;
+}
+
+/* NAVIGATION LINKS */
+.custom-header .navbar-nav .nav-link {
+    color: #263746;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 12px;
+    transition: color 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.custom-header .navbar-nav .nav-link:hover {
+    color: #20bfa9;
+}
+
+/* ACTIVE PAGE */
+.custom-header .navbar-nav .nav-link.active {
+    color: #20bfa9;
+    border-bottom: 2px solid #20bfa9;
+}
+
+/* LOGIN LINK */
+.custom-header .login-link {
+    font-weight: 700;
+}
+
+/* REGISTER BUTTON */
+.custom-header .register-btn {
+    background-color: #20bfa9;
+    color: #ffffff;
+    font-weight: 700;
+    border: 1px solid #20bfa9;
+}
+
+.custom-header .register-btn:hover {
+    background-color: #159888;
+    border-color: #159888;
+    color: #ffffff;
+}
+
+/* PROJECT TEAM BUTTON */
+.custom-header .team-btn {
+    border: 1px solid #0b1d3a;
+    color: #0b1d3a;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.custom-header .team-btn:hover {
+    background-color: #0b1d3a;
+    color: #ffffff;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 991px) {
+
+    .custom-header .navbar-nav {
+        align-items: flex-start;
+        padding-top: 15px;
+    }
+
+    .custom-header .university-name {
+        font-size: 15px;
+    }
+
+    .custom-header .university-tagline {
+        font-size: 10px;
+    }
+
+    .custom-header .navbar-nav .nav-link.active {
+        border-bottom: none;
+    }
+}
+</style>
+
+
+<style>
+
+    /* FOOTER DESIGN */
+
+.ucu-bg-dark {
+    background-color: #0b2c3a;
+}
+
+.ucu-text-gold {
+    color: #37d4af;
+}
+
+/* FOOTER LINKS */
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #37d4af !important;
+}
+
+/* FOOTER HEADINGS */
+footer h6 {
+    letter-spacing: 0.5px;
+}
+</style>
+
