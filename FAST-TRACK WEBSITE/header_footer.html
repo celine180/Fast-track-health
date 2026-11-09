@@ -1,264 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang= "en">
 <head>
     <meta charset="UTF-8">
     <title>Fast Track Dispensary</title>
-    <!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-rel="stylesheet">
 
-</script>
-
-    <style>
-        .ucu-bg-dark { background-color:#159888; }
-        .ucu-text-gold { color: #37d4af; }
-        .ucu-header-logo { max-height: 50px; width: auto; }
-    </style>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="H&F_style.css">
 </head>
-<body class="d-flex flex-column min-vh-100 bg-light">
 
-
+ 
 <!-- HEADER / NAVBAR -->
 <header class="sticky-top custom-header">
-    <nav class="navbar navbar-expand-lg py-3">
-        <div class="container">
-
-            <!-- UNIVERSITY BRANDING -->
-            <a class="navbar-brand d-flex flex-column" href="homepage.html">
-                <span class="university-name">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+  <a class="navbar-brand d-flex flex-column align items-start" href="Homepage.html">  
+     <span class="university-name"></span>
                     UGANDA CHRISTIAN UNIVERSITY
                 </span>
-                <span class="university-tagline">
-                    A Center of Excellence in the Heart of Africa
-                </span>
-            </a>
-
-            <!-- MOBILE MENU BUTTON -->
-            <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#mainNavbar"
-                aria-controls="mainNavbar"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- NAVIGATION LINKS -->
-            <div class="collapse navbar-collapse" id="mainNavbar">
-
-                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2 fw-semibold">
-
-                    <li class="nav-item">
-                        <a class="nav-link active" href="homepage.html" target="_blank">
-                            Home
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="Dashboard.html" target="_blank">
-                            Dashboard
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="About.html" target="_blank">
-                            About
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="Services.html" target="_blank">
-                            Services
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="contactwebpage.html" target="_blank">
-                            Contact
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link login-link" href="Login.html" target="_blank">
-                            Login
-                        </a>
-                    </li>
-
-                    <li class="nav-item ms-lg-2">
-                        <a class="btn register-btn rounded-pill px-4"
-                            href="Register.html" target="_blank">
-                            Register
-                        </a>
-                    </li>
-
-                    <li class="nav-item ms-lg-2">
-                        <a class="btn team-btn rounded-pill px-3"
-                            href="#team" target="_blank">
-                            Project Team
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-<style>
-/* =========================
-   HEADER DESIGN
-========================= */
-
-header.custom-header {
-    background-color:#ffffff;
-    border-bottom: 1px solid #e8edf2;
-    box-shadow: 0 3px 15px rgba(11, 29, 58, 0.08);
-    position: sticky;
-    top: 0;
-    z-index: 1020;
-}
-
-/* UNIVERSITY NAME */
-.custom-header .university-name {
-    color: #0b1d3a;
-    font-size: 19px;
-    font-weight: 800;
-    letter-spacing: 0.4px;
-}
-
-/* UNIVERSITY TAGLINE */
-.custom-header .university-tagline {
-    color: #b17b45;
-    font-size: 11px;
-    font-weight: 600;
-    margin-top: 3px;
-}
-
-/* NAVIGATION LINKS */
-.custom-header .navbar-nav .nav-link {
-    color: #263746;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 10px 12px;
-    transition: color 0.3s ease;
-}
-
-/* HOVER EFFECT */
-.custom-header .navbar-nav .nav-link:hover {
-    color: #20bfa9;
-}
-
-/* ACTIVE PAGE */
-.custom-header .navbar-nav .nav-link.active {
-    color: #20bfa9;
-    border-bottom: 2px solid #20bfa9;
-}
-
-/* LOGIN LINK */
-.custom-header .login-link {
-    font-weight: 700;
-}
-
-/* REGISTER BUTTON */
-.custom-header .register-btn {
-    background-color: #20bfa9;
-    color: #ffffff;
-    font-weight: 700;
-    border: 1px solid #20bfa9;
-}
-
-.custom-header .register-btn:hover {
-    background-color: #159888;
-    border-color: #159888;
-    color: #ffffff;
-}
-
-/* PROJECT TEAM BUTTON */
-.custom-header .team-btn {
-    border: 1px solid #0b1d3a;
-    color: #0b1d3a;
-    font-size: 13px;
-    font-weight: 700;
-}
-
-.custom-header .team-btn:hover {
-    background-color: #0b1d3a;
-    color: #ffffff;
-}
-
-/* MOBILE RESPONSIVENESS */
-@media (max-width: 991px) {
-
-    .custom-header .navbar-nav {
-        align-items: flex-start;
-        padding-top: 15px;
-    }
-
-    .custom-header .university-name {
-        font-size: 15px;
-    }
-
-    .custom-header .university-tagline {
-        font-size: 10px;
-    }
-
-    .custom-header .navbar-nav .nav-link.active {
-        border-bottom: none;
-    }
-}
-</style>
-
-
-<style>
-
-    /* FOOTER DESIGN */
-
-.ucu-bg-dark {
-    background-color: #0b2c3a;
-}
-
-.ucu-text-gold {
-    color: #37d4af;
-}
-
-/* FOOTER LINKS */
-footer a {
-    transition: color 0.3s ease;
-}
-
-footer a:hover {
-    color: #37d4af !important;
-}
-
-/* FOOTER HEADINGS */
-footer h6 {
-    letter-spacing: 0.5px;
-}
-</style>
-
-<main style="
-  background-image: url('');
-  background-size: cover;
-  background-position: center;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-">
-  <div style="background: rgba(10, 25, 49, 0.6); padding: 40px; border-radius: 15px; max-width: 600px;">
-    <h1 style="font-size: 38px; margin-bottom: 10px;">Fast-Track Dispensary Model</h1>
-    <p style="font-size: 18px;">Healthcare that comes to you - fast, reliable, and at home.</p>
-    <br>
-    <a href="Dashboard.html" style="background: #f7a81b; color: #0a1931; padding: 12px 25px; border-radius: 25px; text-decoration: none; font-weight: bold;">Get Started</a>
+                <span class="university-tagline">A Center of Excellence in the Heart of Africa</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <ul class="navbar-nav ms -auto align-items-center">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="Homepage.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="Dashboard.html">Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="Services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="Login.html">Login</a></li>
+        <li class="nav-item"><a class="btn register-btn rounded-pill px-4" href="Register.html">Register</a></li>
+        <li class="nav-item ms-2"><a class="btn btn-outline-dark rounded-pill px-3" href="team">Project Team</a></li>
+    </div>
   </div>
+</nav>   
+</header>
+<main>
+    <!-- Main content goes here -->
+    <p class="text-center py-5">Welcome to the Fast-Track Dispensary Model</p>
 </main>
 
-
-
  <!-- Footer Section -->
-    <footer class="ucu-bg-dark text-white pt-5 pb-3 mt-auto">
+    <footer class=" footer ucu-bg-dark text-white pt-5 pb-3 mt-auto">
         <div class="container">
             <section class="row g-4">
 
@@ -272,6 +56,9 @@ footer h6 {
                         1 SAMUEL 7:12 — "...Hitherto hath the LORD helped us."
                     </blockquote>
                     <p class="small text-white-50 mb-0"><strong>Uganda Christian University</strong></p>
+
+                    <p>TOLL-FREE:</p>
+                    <a href="tel:0800-366-335" class="text-white text-decoration-none fw-bold">0800 366 335</a>
                 </article>
 
                 <!-- Column 2: Navigation Links -->
@@ -314,8 +101,7 @@ footer h6 {
             </section>
         </div>
     </footer>
-
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </html>
+
