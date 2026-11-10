@@ -3,341 +3,40 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home - Fast Track Clinic</title>
- <style>
-        .ucu-bg-dark { background-color:#159888; }
-        .ucu-text-gold { color: #37d4af; }
-        .ucu-header-logo { max-height: 50px; width: auto; }
-    </style>
+    <title>Fast-Track Health</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body class="d-flex flex-column min-vh-100 bg-light">
-
-
-<!-- HEADER / NAVBAR -->
-<header class="sticky-top custom-header">
-    <nav class="navbar navbar-expand-lg py-3">
-        <div class="container">
-
-            <!-- UNIVERSITY BRANDING -->
-            <a class="navbar-brand d-flex flex-column" href="homepage.html">
-                <span class="university-name">
-                    UGANDA CHRISTIAN UNIVERSITY
-                </span>
-                <span class="university-tagline">
-                    A Center of Excellence in the Heart of Africa
-                </span>
-            </a>
-
-            <!-- MOBILE MENU BUTTON -->
-            <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#mainNavbar"
-                aria-controls="mainNavbar"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- NAVIGATION LINKS -->
-            <div class="collapse navbar-collapse" id="mainNavbar">
-
-                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2 fw-semibold">
-
-                    <li class="nav-item">
-                        <a class="nav-link active" href="homepage.html">
-                            Home
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="Dashboard.html">
-                            Dashboard
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="About.html">
-                            About
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="Services.html">
-                            Services
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="Contact.html">
-                            Contact
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link login-link" href="Login.html">
-                            Login
-                        </a>
-                    </li>
-
-                    <li class="nav-item ms-lg-2">
-                        <a class="btn register-btn rounded-pill px-4"
-                            href="Register.html">
-                            Register
-                        </a>
-                    </li>
-
-                    <li class="nav-item ms-lg-2">
-                        <a class="btn team-btn rounded-pill px-3"
-                            href="#team">
-                            Project Team
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-<style>
-/* =========================
-   HEADER DESIGN
-========================= */
-
-header.custom-header {
-    background-color:#ffffff;
-    border-bottom: 1px solid #e8edf2;
-    box-shadow: 0 3px 15px rgba(11, 29, 58, 0.08);
-    position: sticky;
-    top: 0;
-    z-index: 1020;
-}
-
-/* UNIVERSITY NAME */
-.custom-header .university-name {
-    color: #0b1d3a;
-    font-size: 19px;
-    font-weight: 800;
-    letter-spacing: 0.4px;
-}
-
-/* UNIVERSITY TAGLINE */
-.custom-header .university-tagline {
-    color: #b17b45;
-    font-size: 11px;
-    font-weight: 600;
-    margin-top: 3px;
-}
-
-/* NAVIGATION LINKS */
-.custom-header .navbar-nav .nav-link {
-    color: #263746;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 10px 12px;
-    transition: color 0.3s ease;
-}
-
-/* HOVER EFFECT */
-.custom-header .navbar-nav .nav-link:hover {
-    color: #20bfa9;
-}
-
-/* ACTIVE PAGE */
-.custom-header .navbar-nav .nav-link.active {
-    color: #20bfa9;
-    border-bottom: 2px solid #20bfa9;
-}
-
-/* LOGIN LINK */
-.custom-header .login-link {
-    font-weight: 700;
-}
-
-/* REGISTER BUTTON */
-.custom-header .register-btn {
-    background-color: #20bfa9;
-    color: #ffffff;
-    font-weight: 700;
-    border: 1px solid #20bfa9;
-}
-
-.custom-header .register-btn:hover {
-    background-color: #159888;
-    border-color: #159888;
-    color: #ffffff;
-}
-
-/* PROJECT TEAM BUTTON */
-.custom-header .team-btn {
-    border: 1px solid #0b1d3a;
-    color: #0b1d3a;
-    font-size: 13px;
-    font-weight: 700;
-}
-
-.custom-header .team-btn:hover {
-    background-color: #0b1d3a;
-    color: #ffffff;
-}
-
-/* MOBILE RESPONSIVENESS */
-@media (max-width: 991px) {
-
-    .custom-header .navbar-nav {
-        align-items: flex-start;
-        padding-top: 15px;
-    }
-
-    .custom-header .university-name {
-        font-size: 15px;
-    }
-
-    .custom-header .university-tagline {
-        font-size: 10px;
-    }
-
-    .custom-header .navbar-nav .nav-link.active {
-        border-bottom: none;
-    }
-}
-</style>
-  </head>
-<nav class="nav nav-pills nav justified">
-  <a class="nav-link active" aria-current="page" href="#">Active</a>
-  <a class="nav-link" href="#">About Us</a>
-  <a class="nav-link" href="#">Link</a>
-  <a class="nav-link disabled" aria-disabled="true">Contacts</a>
-</nav>
+<body class="d-flex flex-column min-vh-100 bg-light"></body>
  <body>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous"> 
-<div class="contains-inline">
-  <div class="card-group">
-  <div class="card">
-    <img src="hospital.jpg" class="card-img-top" >
-    <div class="col" id="book appointment">
-      <h4 class="card-title">BOOK APPOINTMENT</h4>
-      <p class="card-text">Book an appointment to see the doctor in person.</p>
-    </div>
-    <div class="card-footer">
-      <small class="fg-2">Available on wednesdays from 8:00am-5:00pm</small>
-    </div>
-  </div>
-  <div class="card">
-    <img src="images.png" class="card-img-top" alt="...">
-    <div class="col" id="medicine refill">
-      <h4 class="card-title">MEDICINE REFILL</h4>
-      <p class="card-text">Running low on medication?Order a quick refill here.</p>
-    </div>
-    <div class="card-footer">
-      <small class="fg-2">Always available </small>
-    </div>
-  </div>
-  <div class="card">
-    <img src="Appo.png" class="card-img-top" alt="...">
-    <div class="col" id="consultations">
-      <h4 class="card-title">CONSULTATIONS</h4>
-      <p class="card-text">Get expert virtual or medical advice from our dedicated clinical team.</p>
-    </div>
-    <div class="card-footer">
-      <small class="fg-2">Available Monday to Sunday from 8:00am to 6:00pm </small>
-    </div>
-  </div>
-  </div>
-</div>
-<div>
-  <label for="exampleFormControlSelect3" class="form-label">Select an option</label>
-  <select class="form-control" id="exampleFormControlSelect3" multiple aria-label="Multiple select example">
-    <option value="book appointment">1.BOOK APPOINTMENT</option>
-    <option value="medicine refill">2.REFILL</option>
-    <option value="consultations">3.CONSULTAIONS</option>
-  </select>
-</div>
+  <div id="header"></div>
+   <body class="bg-light">
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card shadow-3 p-4">
+<h1>Select an option</h1>
+<a href="consultations.html"><button style="background-color:blue;text-color:white;">1.consultations</button></a>
+<a href="Refill.html"><button style="background-color:blue;text-color:white;">2.Refill</button></a>
+<a href="Book appointments.html"><button style="background-color:blue;text-color:white;">3.Book appointments</button></a>
 <script src="https://jsdelivr.net"></script>
 <link rel="stylesheet"href="COLOR.css">
+</div>
+</div>
+</div>
+</div>
+  <div id="footer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    fetch("header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("header").innerHTML = data;
+      });
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
 </body>
 </html>
-<style>
-
-    /* FOOTER DESIGN */
-
-.ucu-bg-dark {
-    background-color: #0b2c3a;
-}
-
-.ucu-text-gold {
-    color: #37d4af;
-}
-
-/* FOOTER LINKS */
-footer a {
-    transition: color 0.3s ease;
-}
-
-footer a:hover {
-    color: #37d4af !important;
-}
-
-/* FOOTER HEADINGS */
-footer h6 {
-    letter-spacing: 0.5px;
-}
-</style>
- <!-- Footer Section -->
-    <footer class="ucu-bg-dark text-white pt-5 pb-3 mt-auto">
-        <div class="container">
-            <section class="row g-4">
-
-                <!-- Column 1: Project Identity -->
-                <article class="col-lg-5 col-md-6">
-                    <h6 class="text-uppercase fw-bold text-warning mb-2">Fast-Track Dispensary Model</h6>
-                    <p class="small text-white-50 mb-2">
-                        A decentralized, mobile-first healthcare ecosystem designed to streamline chronic care delivery and reduce hospital queues.
-                    </p>
-                    <blockquote class="blockquote small ucu-text-gold fst-italic mb-3">
-                        1 SAMUEL 7:12 — "...Hitherto hath the LORD helped us."
-                    </blockquote>
-                    <p class="small text-white-50 mb-0"><strong>Uganda Christian University</strong></p>
-                </article>
-
-                <!-- Column 2: Navigation Links -->
-                <nav class="col-lg-3 col-md-6" aria-label="Footer Navigation">
-                    <h6 class="text-uppercase fw-bold text-light mb-3">Project Overview</h6>
-                    <ul class="list-unstyled small">
-                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">SDG 3 Alignment</a></li>
-                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Home Medication Delivery</a></li>
-                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">On-Demand Doctor Dispatch</a></li>
-                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Telehealth & EHR Sync</a></li>
-                    </ul>
-                </nav>
-
-                <!-- Column 3: Team Roster -->
-                <aside class="col-lg-4 col-md-12" id="team">
-                    <h6 class="text-uppercase fw-bold text-light mb-3">Prepared By</h6>
-                    <ul class="list-unstyled small text-white-50 row g-1">
-                        <li class="col-6">Irankunda Lucky <small class="badge bg-secondary">B39666</small></li>
-                        <li class="col-6">Nyamwenge Celine <small class="badge bg-secondary">B41345</small></li>
-                        <li class="col-6">Banuli Salimu <small class="badge bg-secondary">B39662</small></li>
-                        <li class="col-6">Ochaga Mark Best <small class="badge bg-secondary">B39673</small></li>
-                        <li class="col-12 mt-2">Brenda Kade Ramba <small class="badge bg-secondary">B40161</small></li>
-                        <li class="col-12 mt-2">Namutebi Treasure Acheng<small class="badge bg-secondary">B39127</small></li>
-                    </ul>
-                </aside>
-
-            </section>
-
-            <hr class="my-4 border-secondary opacity-25">
-
-            <!-- Copyright Bar -->
-            <section class="row align-items-center text-center text-md-start small text-white-50">
-                <p class="col-md-8 mb-2 mb-md-0">
-                    &copy; 2026 Fast-Track Dispensary Model — Group Project.
-                </p>
-                <nav class="col-md-4 text-center text-md-end" aria-label="University Links">
-                    <a href="https://ucu.ac.ug" target="_blank" class="text-white-50 text-decoration-none me-3">UCU Portal</a>
-                    <a href="#" class="text-white-50 text-decoration-none">Privacy Policy</a>
-                </nav>
-            </section>
-        </div>
-    </footer>
-

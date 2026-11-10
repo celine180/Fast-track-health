@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Refill Prescription</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+  </head>
+  <body>
+    <div id="header"></div>
+    <h1>Refill Prescription</h1>
+<h2>Please fill the details below correctly</h2>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+<form>
+<div>
+<label for="Name">Name</label>
+<input type="text" id="Name" class="dotted-line-input"required>
+</div>
+<div>
+<label for="DOB">Date of birth:</label>
+<input type="date" id="DOB">
+</div>
+<div>
+<label for="Tel">Phone number:</label>
+<input type="numbers" id="Tel" maxlength="10" required>
+</div>
+<div>
+<label for="home">Address</label>
+<input type="Text" id="home" maxlength="100" required>
+</div>
+<div class="mb-3">
+<label for="meds">Medicine</label>
+<input type="text" id="meds" required>
+</div>
+  <div id="footer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    fetch("header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("header").innerHTML = data;
+      });
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
+  </body>
+<button type="submit">submit</button>
+</form>
+</html>
