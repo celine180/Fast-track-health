@@ -21,7 +21,7 @@
           <h5>● Fast Track Health</h5>
           <hr>
           <a href="Dashboard.html" class="btn btn-primary w-100 text-start mb-2">◆ Dashboard</a>
-          <a href="Patients.html" class="btn btn-light w-100 text-start mb-2">👥 Patients</a>
+          
           <a href="Book appointments.html" class="btn btn-light w-100 text-start mb-2">📅 Appointments</a>
           <a href="Refill.html" class="btn btn-light w-100 text-start mb-2">💊 Refill</a>
           <small class="text-muted">ACCOUNT</small>
@@ -83,11 +83,7 @@
             <input type="text" class="form-control" placeholder="Search patients, doctors...">
           </div>
         </div>
-        <!-- PATIENT / ADMIN - OUTSIDE the card, on the left -->
-        <div class="btn-group mb-3">
-          <button id="btnPatient" type="button" class="btn btn-primary" onclick="showPatient()">Patient</button>
-          <button id="btnAdmin" type="button" class="btn btn-light" onclick="showAdmin()">Admin</button>
-        </div>
+       
 
         <!-- PATIENT VIEW -->
         <div id="patientView">
@@ -100,64 +96,82 @@
             </div>
           </div>
 
-          <!-- OVERVIEW -->
-<h5 class="fw-bold mb-3">Overview</h5>
+          <!-- PATIENT OVERVIEW -->
+<h5 class="fw-bold mb-3">My Health Overview</h5>
 
 <div class="row g-3 mb-4">
 
-    <!-- TOTAL PATIENTS -->
+    <!-- UPCOMING APPOINTMENTS -->
     <div class="col-md-4">
-        <div class="card border-0 shadow-sm rounded-4 p-3 text-white"
-             style="background: #3988df;">
+        <div class="card border-0 shadow-sm rounded-4 p-3 h-100"
+             style="background:#e8f2ff;">
 
             <div class="d-flex justify-content-between align-items-center">
                 <div>
-                    <small>Total Patients</small>
-                    <h2 class="fw-bold mt-2">1,248</h2>
-                    <small>▲ 12% this month</small>
+                    <small class="text-muted">Upcoming Appointments</small>
+                    <h2 class="fw-bold text-primary mt-2">1</h2>
+                    <small class="text-muted">Next: Saturday, 10:30 AM</small>
                 </div>
 
-                <i class="bi bi-people-fill fs-1"></i>
+                <i class="bi bi-calendar-check-fill text-primary fs-1"></i>
             </div>
+
+            <a href="Book appointments.html"
+               class="btn btn-outline-primary btn-sm mt-3">
+                View Appointments
+            </a>
         </div>
     </div>
 
-    <!-- APPOINTMENTS -->
+
+    <!-- REFILL REQUESTS -->
     <div class="col-md-4">
-        <div class="card border-0 shadow-sm rounded-4 p-3 text-white"
-             style="background: #27ae80;">
+        <div class="card border-0 shadow-sm rounded-4 p-3 h-100"
+             style="background:#e5f7ef;">
 
             <div class="d-flex justify-content-between align-items-center">
                 <div>
-                    <small>Today's Appointments</small>
-                    <h2 class="fw-bold mt-2">34</h2>
-                    <small>8 confirmed</small>
+                    <small class="text-muted">Refill Requests</small>
+                    <h2 class="fw-bold text-success mt-2">2</h2>
+                    <small class="text-muted">Pending requests</small>
                 </div>
 
-                <i class="bi bi-calendar-check-fill fs-1"></i>
+                <i class="bi bi-capsule-pill text-success fs-1"></i>
             </div>
+
+            <a href="Refill.html"
+               class="btn btn-outline-success btn-sm mt-3">
+                View Refills
+            </a>
         </div>
     </div>
 
-    <!-- DOCTORS -->
+
+    <!-- MEDICAL RECORDS -->
     <div class="col-md-4">
-        <div class="card border-0 shadow-sm rounded-4 p-3 text-white"
-             style="background: #8064c9;">
+        <div class="card border-0 shadow-sm rounded-4 p-3 h-100"
+             style="background:#f0eaff;">
 
             <div class="d-flex justify-content-between align-items-center">
                 <div>
-                    <small>Doctors On Duty</small>
-                    <h2 class="fw-bold mt-2">12</h2>
-                    <small>3 on leave</small>
+                    <small class="text-muted">Medical Records</small>
+                    <h2 class="fw-bold mt-2" style="color:#8064c9;">5</h2>
+                    <small class="text-muted">Available records</small>
                 </div>
 
-                <i class="bi bi-heart-pulse-fill fs-1"></i>
+                <i class="bi bi-file-medical-fill fs-1"
+                   style="color:#8064c9;"></i>
             </div>
+
+            <a href="Medical Records.html"
+               class="btn btn-sm mt-3"
+               style="color:#8064c9; border:1px solid #8064c9;">
+                View Records
+            </a>
         </div>
     </div>
 
 </div>
-
           
 <!-- PROFILE AND APPOINTMENT SECTION -->
 <div class="row g-3 mb-4">
