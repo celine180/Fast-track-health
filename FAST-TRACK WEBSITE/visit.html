@@ -1,0 +1,56 @@
+ <!-- Doctor Dispatch Form -->
+  <link rel="stylesheet" href="style_dashboard.css">
+
+        <section id="dispatch">
+
+            <h2>Request On-Demand Doctor Visit</h2>
+
+            <p>
+                Dispatch a certified healthcare professional
+                to a patient's residential location for routine check-ups.
+            </p>
+
+            <form action="#" method="post">
+
+                <label for="patientName">Patient Name:</label>
+                <br>
+
+                <input
+                    type="text"
+                    id="patientName"
+                    name="patientName"
+                    placeholder="Enter patient's full name"
+                    required
+                >
+
+                <br><br>
+
+                <label for="conditionType">Chronic Condition:</label>
+                <br>
+
+                <select id="conditionType" name="conditionType" required>
+                    <option value="">Select condition</option>
+                    <option value="Diabetes">Diabetes</option>
+                    <option value="Hypertension">Hypertension</option>
+                    <option value="Asthma">Asthma</option>
+                    <option value="Cardiovascular Disease">Cardiovascular Disease</option>
+                    <option value="Chronic Kidney Disease">Chronic Kidney Disease</option>
+                    <option value="HIV Care">HIV Care</option>
+                </select>
+
+                <br><br>
+
+                <label for="deliveryAddress">Residential Address / GPS:</label>
+                <br>
+
+                <input
+                    type="text"
+                    id="deliveryAddress"
+                    name="deliveryAddress"
+                    placeholder="Enter residential address"
+                    required
+                >
+
+                <br><br>
+
+                <button type="submit">Dispatch Doctor</button>
