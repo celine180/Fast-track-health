@@ -54,15 +54,15 @@ header.custom-header {
 
 /* REGISTER BUTTON */
 .custom-header .register-btn {
-    background-color: #20bfa9;
+    background-color: #1792de;
     color: #ffffff;
     font-weight: 700;
     border: 1px solid #20bfa9;
 }
 
 .custom-header .register-btn:hover {
-    background-color: #159888;
-    border-color: #159888;
+    background-color: #181feb;
+    border-color: #1339e2;
     color: #ffffff;
 }
 
