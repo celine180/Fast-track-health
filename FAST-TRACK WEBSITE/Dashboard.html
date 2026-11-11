@@ -162,29 +162,133 @@
 
 </div>
 
-          <div class="row">
-            <!-- MY PROFILE -->
-            <div class="col-md-6 mb-3">
-              <div class="card p-3 main-card h-100">
-                <h5>My Profile</h5>
-                <p><b>Sarah Mugabi</b><br>Patient ID: PT-2026-001</p>
-                <span class="badge bg-primary">✓ Active Patient</span>
-                <hr>
-                <p>Age: <b>32 years</b><br>Blood Type: <b>O+</b><br>Last Visit: <b>Oct 15, 2026</b><br>Next Checkup:
-                  <b>Dec 20, 2026</b></p>
-              </div>
-            </div>
-            <!-- UPCOMING APPOINTMENT -->
-            <div class="col-md-6 mb-3">
-              <div class="card p-3 dark-green h-100">
-                <h5>Upcoming Appointment</h5>
-                <div class="card p-3 text-dark"><b>Dr. Brenda Ramba</b><br><small>Cardiology • Saturday, 10:30
-                    AM</small><br><small>📍 Room 204, 2nd Floor</small></div>
-                <small class="mt-2">⏰ Arrive 15 minutes early • Bring your ID</small>
-              </div>
-            </div>
-          </div>
+          
+<!-- PROFILE AND APPOINTMENT SECTION -->
+<div class="row g-3 mb-4">
 
+    <!-- MY PROFILE -->
+    <div class="col-md-6">
+        <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+
+            <div class="d-flex align-items-center gap-3 mb-3">
+
+                <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center"
+                     style="width:65px; height:65px;">
+                    <i class="bi bi-person-fill fs-1"></i>
+                </div>
+
+                <div>
+                    <h5 class="fw-bold mb-1">Sarah Mugabi</h5>
+                    <small class="text-muted">Patient ID: PT-2026-001</small>
+                    <br>
+                    <span class="badge bg-success mt-1">Active Patient</span>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <h6 class="fw-bold mb-3">Personal Information</h6>
+
+            <div class="d-flex justify-content-between mb-3">
+                <span class="text-muted">
+                    <i class="bi bi-calendar3 me-2"></i>Age
+                </span>
+                <strong>32 years</strong>
+            </div>
+
+            <div class="d-flex justify-content-between mb-3">
+                <span class="text-muted">
+                    <i class="bi bi-droplet-fill me-2"></i>Blood Type
+                </span>
+                <strong>O+</strong>
+            </div>
+
+            <div class="d-flex justify-content-between mb-3">
+                <span class="text-muted">
+                    <i class="bi bi-clock-history me-2"></i>Last Visit
+                </span>
+                <strong>Oct 15, 2026</strong>
+            </div>
+
+            <div class="d-flex justify-content-between">
+                <span class="text-muted">
+                    <i class="bi bi-calendar-check me-2"></i>Next Checkup
+                </span>
+                <strong>Dec 20, 2026</strong>
+            </div>
+
+            <a href="Register.html"
+               class="btn btn-outline-primary mt-4">
+                View Full Profile
+            </a>
+
+        </div>
+    </div>
+
+
+    <!-- UPCOMING APPOINTMENT -->
+    <div class="col-md-6">
+        <div class="card border-0 shadow-sm rounded-4 p-4 h-100"
+             style="background:#e8f5f0;">
+
+            <div class="d-flex justify-content-between align-items-center mb-3">
+
+                <h5 class="fw-bold mb-0">Upcoming Appointment</h5>
+
+                <i class="bi bi-calendar2-check-fill fs-3 text-success"></i>
+
+            </div>
+
+            <div class="card border-0 shadow-sm rounded-4 p-3 mb-3">
+
+                <div class="d-flex align-items-center gap-3">
+
+                    <div class="rounded-circle bg-success text-white d-flex align-items-center justify-content-center"
+                         style="width:55px; height:55px;">
+                        <i class="bi bi-person-badge-fill fs-3"></i>
+                    </div>
+
+                    <div>
+                        <h6 class="fw-bold mb-1">Dr. Brenda Ramba</h6>
+                        <small class="text-muted">Cardiology Specialist</small>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <p class="mb-2">
+                    <i class="bi bi-calendar-event text-success me-2"></i>
+                    Saturday, 10:30 AM
+                </p>
+
+                <p class="mb-2">
+                    <i class="bi bi-geo-alt-fill text-success me-2"></i>
+                    Room 204, 2nd Floor
+                </p>
+
+                <p class="mb-0">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    <strong>Appointment Confirmed</strong>
+                </p>
+
+            </div>
+
+            <div class="alert alert-success mb-0">
+                <i class="bi bi-info-circle-fill me-2"></i>
+                Please arrive 15 minutes early and bring your ID.
+            </div>
+
+            <a href="Book appointments.html"
+               class="btn btn-success mt-3">
+                View Appointment
+            </a>
+
+        </div>
+    </div>
+
+</div>
           <!-- DOCTORS LIST -->
           <div class="card p-3 main-card">
             <h5>Doctors List</h5>
