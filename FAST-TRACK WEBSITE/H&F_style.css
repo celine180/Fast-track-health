@@ -38,12 +38,12 @@ header.custom-header {
 
 /* HOVER EFFECT */
 .custom-header .navbar-nav .nav-link:hover {
-    color: #20bdbf;
+    color: #1575e2;
 }
 
 /* ACTIVE PAGE */
 .custom-header .navbar-nav .nav-link.active {
-    color: #20bfa9;
+    color: #205bda;
     border-bottom: 2px solid #20bfa9;
 }
 
@@ -57,7 +57,7 @@ header.custom-header {
     background-color: #1792de;
     color: #ffffff;
     font-weight: 700;
-    border: 1px solid #20bfa9;
+    border: 1px solid #0e8adc;
 }
 
 .custom-header .register-btn:hover {
