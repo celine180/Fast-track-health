@@ -1,140 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fast Track Health - Dashboard</title>
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="style_dashboard.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fast Track Health - Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style_dashboard.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
 <body>
-<div class="container-fluid p-3">
-<div class="row">
+  <div class="container-fluid p-3">
+    <div class="row">
 
-  <!-- LEFT SIDEBAR -->
-  <div class="col-md-3">
-    <div class="card p-3 sidebar-card">
-      <h5>● Fast Track Health</h5>
-      <hr>
-      <a href="Dashboard.html" class="btn btn-primary w-100 text-start mb-2">◆ Dashboard</a>
-      <a href="Patients.html" class="btn btn-light w-100 text-start mb-2">👥 Patients</a>
-      <a href="Book appointments.html" class="btn btn-light w-100 text-start mb-2">📅 Appointments</a>
-      <a href="Refill.html" class="btn btn-light w-100 text-start mb-2">💊 Refill</a>
-      <small class="text-muted">GENERAL</small>
-      <a href="Analytics.html" class="btn btn-light w-100 text-start mb-2">📊 Analytics</a>
-      
-      <a href="Settings.html" class="btn btn-light w-100 text-start mb-2">⚙️ Settings</a>
-      <small class="text-muted">ACCOUNT</small>
-      <a href="Register.html" class="btn btn-light w-100 text-start mb-2">👤 My Profile</a>
-      <a href="home-page.html" class="btn btn-light w-100 text-start mb-2">🚪 Logout</a>
+      <!-- LEFT SIDEBAR -->
+      <div class="col-md-3">
+        <div class="card p-3 sidebar-card">
+          <h5>● Fast Track Health</h5>
+          <hr>
+          <a href="Dashboard.html" class="btn btn-primary w-100 text-start mb-2">◆ Dashboard</a>
+          <a href="Patients.html" class="btn btn-light w-100 text-start mb-2">👥 Patients</a>
+          <a href="Book appointments.html" class="btn btn-light w-100 text-start mb-2">📅 Appointments</a>
+          <a href="Refill.html" class="btn btn-light w-100 text-start mb-2">💊 Refill</a>
+          <small class="text-muted">GENERAL</small>
+          <a href="Analytics.html" class="btn btn-light w-100 text-start mb-2">📊 Analytics</a>
+
+          <a href="Settings.html" class="btn btn-light w-100 text-start mb-2">⚙️ Settings</a>
+          <small class="text-muted">ACCOUNT</small>
+
+          <a href="home-page.html" class="btn btn-light w-100 text-start mb-2">🚪 Logout</a>
+        </div>
+      </div>
+
+      <!-- RIGHT MAIN -->
+      <div class="col-md-9">
+
+        <!-- TOP NAVIGATION -->
+        <div class="d-flex justify-content-between align-items-center flex-wrap mb-4">
+
+          <!-- Welcome Heading -->
+          <div>
+            <h4 class="fw-bold mb-1">
+              Welcome to Fast Track Health
+            </h4>
+            <p class="text-muted mb-0">
+              Here's what's happening today.
+            </p>
+          </div>
+
+          <!-- Notification and Profile -->
+          <div class="d-flex align-items-center gap-3">
+
+            <!-- Notification Bell -->
+            <button class="btn btn-light position-relative rounded-circle" style="width:45px; height:45px;"
+              aria-label="Notifications">
+
+              <i class="bi bi-bell-fill fs-5"></i>
+
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                3
+              </span>
+            </button>
+
+            <!-- Profile Icon -->
+            <a href="Register.html"
+              class="btn btn-light rounded-circle d-flex align-items-center justify-content-center"
+              style="width:45px; height:45px;" aria-label="My profile">
+
+              <i class="bi bi-person-fill fs-4"></i>
+
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- SEARCH BAR -->
+        <div class="mb-4" style="max-width:600px;">
+          <div class="input-group">
+            <span class="input-group-text bg-white">
+              <i class="bi bi-search"></i>
+            </span>
+
+            <input type="text" class="form-control" placeholder="Search patients, doctors...">
+          </div>
+        </div>
+        <!-- PATIENT / ADMIN - OUTSIDE the card, on the left -->
+        <div class="btn-group mb-3">
+          <button id="btnPatient" type="button" class="btn btn-primary" onclick="showPatient()">Patient</button>
+          <button id="btnAdmin" type="button" class="btn btn-light" onclick="showAdmin()">Admin</button>
+        </div>
+
+        <!-- PATIENT VIEW -->
+        <div id="patientView">
+          <div class="card p-3 main-card mb-3">
+            <h5>Quick Actions</h5>
+            <p class="text-muted">Book an appointment or Request a refill.</p>
+            <div>
+              <a href="Book appointments.html" class="btn btn-primary me-2">+ Book Appointment</a>
+              <a href="Refill.html" class="btn btn-primary me-2">Request Refill</a>
+            </div>
+          </div>
+
+          <!-- OVERVIEW -->
+          <h5>Overview</h5>
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <div class="card p-3 dark-green"><small>Total Patients</small>
+                <h3>1,248</h3><small>▲ 12% this month</small>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card p-3 dark-green"><small>Today's Appointments</small>
+                <h3>34</h3><small>8 confirmed</small>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card p-3 orange-card"><small>Doctors On Duty</small>
+                <h3>12</h3><small>3 on leave</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- MY PROFILE -->
+            <div class="col-md-6 mb-3">
+              <div class="card p-3 main-card h-100">
+                <h5>My Profile</h5>
+                <p><b>Sarah Mugabi</b><br>Patient ID: PT-2026-001</p>
+                <span class="badge bg-primary">✓ Active Patient</span>
+                <hr>
+                <p>Age: <b>32 years</b><br>Blood Type: <b>O+</b><br>Last Visit: <b>Oct 15, 2026</b><br>Next Checkup:
+                  <b>Dec 20, 2026</b></p>
+              </div>
+            </div>
+            <!-- UPCOMING APPOINTMENT -->
+            <div class="col-md-6 mb-3">
+              <div class="card p-3 dark-green h-100">
+                <h5>Upcoming Appointment</h5>
+                <div class="card p-3 text-dark"><b>Dr. Brenda Ramba</b><br><small>Cardiology • Saturday, 10:30
+                    AM</small><br><small>📍 Room 204, 2nd Floor</small></div>
+                <small class="mt-2">⏰ Arrive 15 minutes early • Bring your ID</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- DOCTORS LIST -->
+          <div class="card p-3 main-card">
+            <h5>Doctors List</h5>
+            <div class="d-flex justify-content-between border-bottom py-2"><span><b>Dr. Brenda Ramba</b> -
+                Cardiology</span><span class="badge bg-success">Available</span></div>
+            <div class="d-flex justify-content-between border-bottom py-2"><span><b>Dr. Peter Okello</b> -
+                General</span><span class="badge bg-success">Available</span></div>
+            <div class="d-flex justify-content-between py-2"><span><b>Dr. Grace Nambi</b> - Endocrinology</span><span
+                class="badge bg-warning">Busy</span></div>
+          </div>
+        </div>
+
+        <!-- ADMIN VIEW - Hidden at first -->
+        <div id="adminView" style="display:none;">
+          <div class="card p-3 main-card mb-3">
+            <h5>Admin Quick Actions</h5>
+            <p class="text-muted">Review new patients and manage doctors.</p>
+            <div>
+              <a href="Patients.html" class="btn btn-primary me-2">View All Patients</a>
+            </div>
+          </div>
+          <div class="card p-3 main-card">
+            <h5>Admin Overview</h5>
+            <p>New Registrations: <b>5</b><br>Pending Refills: <b>3</b><br>Reports to Review: <b>2</b></p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
 
-  <!-- RIGHT MAIN -->
-  <div class="col-md-9">
-    
-    <p class="text-muted"><strong>Welcome to the Fast Track Health Dashboard</strong></p>
-    <!-- Notification Button -->
-<div class="ms-auto">
-    <button class="btn btn-light position-relative">
-        <i class="bi bi-bell-fill"></i>
-        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-            3
-        </span>
-    </button>
-</div>
-
-    <!-- SEARCH - Outside, on left -->
-    <input class="form-control mb-3" placeholder="Search patients, doctors..." style="max-width:400px;">
-
-    <!-- PATIENT / ADMIN - OUTSIDE the card, on the left -->
-    <div class="btn-group mb-3">
-      <button id="btnPatient" type="button" class="btn btn-primary" onclick="showPatient()">Patient</button>
-      <button id="btnAdmin" type="button" class="btn btn-light" onclick="showAdmin()">Admin</button>
-    </div>
-
-    <!-- PATIENT VIEW -->
-    <div id="patientView">
-      <div class="card p-3 main-card mb-3">
-        <h5>Quick Actions</h5>
-        <p class="text-muted">Book an appointment or Request a refill.</p>
-        <div>
-          <a href="Book appointments.html" class="btn btn-primary me-2">+ Book Appointment</a>
-          <a href="Refill.html" class="btn btn-primary me-2">Request Refill</a>
-        </div>
-      </div>
-
-      <!-- OVERVIEW -->
-      <h5>Overview</h5>
-      <div class="row">
-        <div class="col-md-4 mb-3"><div class="card p-3 dark-green"><small>Total Patients</small><h3>1,248</h3><small>▲ 12% this month</small></div></div>
-        <div class="col-md-4 mb-3"><div class="card p-3 dark-green"><small>Today's Appointments</small><h3>34</h3><small>8 confirmed</small></div></div>
-        <div class="col-md-4 mb-3"><div class="card p-3 orange-card"><small>Doctors On Duty</small><h3>12</h3><small>3 on leave</small></div></div>
-      </div>
-
-      <div class="row">
-        <!-- MY PROFILE -->
-        <div class="col-md-6 mb-3">
-          <div class="card p-3 main-card h-100">
-            <h5>My Profile</h5>
-            <p><b>Sarah Mugabi</b><br>Patient ID: PT-2026-001</p>
-            <span class="badge bg-primary">✓ Active Patient</span><hr>
-            <p>Age: <b>32 years</b><br>Blood Type: <b>O+</b><br>Last Visit: <b>Oct 15, 2026</b><br>Next Checkup: <b>Dec 20, 2026</b></p>
-          </div>
-        </div>
-        <!-- UPCOMING APPOINTMENT -->
-        <div class="col-md-6 mb-3">
-          <div class="card p-3 dark-green h-100">
-            <h5>Upcoming Appointment</h5>
-            <div class="card p-3 text-dark"><b>Dr. Brenda Ramba</b><br><small>Cardiology • Saturday, 10:30 AM</small><br><small>📍 Room 204, 2nd Floor</small></div>
-            <small class="mt-2">⏰ Arrive 15 minutes early • Bring your ID</small>
-          </div>
-        </div>
-      </div>
-
-      <!-- DOCTORS LIST -->
-      <div class="card p-3 main-card">
-        <h5>Doctors List</h5>
-        <div class="d-flex justify-content-between border-bottom py-2"><span><b>Dr. Brenda Ramba</b> - Cardiology</span><span class="badge bg-success">Available</span></div>
-        <div class="d-flex justify-content-between border-bottom py-2"><span><b>Dr. Peter Okello</b> - General</span><span class="badge bg-success">Available</span></div>
-        <div class="d-flex justify-content-between py-2"><span><b>Dr. Grace Nambi</b> - Endocrinology</span><span class="badge bg-warning">Busy</span></div>
-      </div>
-    </div>
-
-    <!-- ADMIN VIEW - Hidden at first -->
-    <div id="adminView" style="display:none;">
-      <div class="card p-3 main-card mb-3">
-        <h5>Admin Quick Actions</h5>
-        <p class="text-muted">Review new patients and manage doctors.</p>
-        <div>
-          <a href="Patients.html" class="btn btn-primary me-2">View All Patients</a>
-        </div>
-      </div>
-      <div class="card p-3 main-card">
-        <h5>Admin Overview</h5>
-        <p>New Registrations: <b>5</b><br>Pending Refills: <b>3</b><br>Reports to Review: <b>2</b></p>
-      </div>
-    </div>
-
-  </div>
-</div>
-</div>
-
-<script>
-function showPatient() {
-  document.getElementById('patientView').style.display = 'block';
-  document.getElementById('adminView').style.display = 'none';
-  document.getElementById('btnPatient').className = 'btn btn-primary';
-  document.getElementById('btnAdmin').className = 'btn btn-light';
-}
-function showAdmin() {
-  document.getElementById('patientView').style.display = 'none';
-  document.getElementById('adminView').style.display = 'block';
-  document.getElementById('btnPatient').className = 'btn btn-light';
-  document.getElementById('btnAdmin').className = 'btn btn-primary';
-}
-</script>
+  <script>
+    function showPatient() {
+      document.getElementById('patientView').style.display = 'block';
+      document.getElementById('adminView').style.display = 'none';
+      document.getElementById('btnPatient').className = 'btn btn-primary';
+      document.getElementById('btnAdmin').className = 'btn btn-light';
+    }
+    function showAdmin() {
+      document.getElementById('patientView').style.display = 'none';
+      document.getElementById('adminView').style.display = 'block';
+      document.getElementById('btnPatient').className = 'btn btn-light';
+      document.getElementById('btnAdmin').className = 'btn btn-primary';
+    }
+  </script>
 </body>
+
 </html>
