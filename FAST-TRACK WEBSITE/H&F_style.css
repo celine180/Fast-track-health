@@ -99,6 +99,17 @@ header.custom-header {
         border-bottom: none;
     }
 }
+.carousel, .carousel-inner, .carousel-item {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+.carousel + div, .carousel + section {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+footer {
+  margin-top: 0 !important;
+}
 
 
     /* FOOTER DESIGN */
