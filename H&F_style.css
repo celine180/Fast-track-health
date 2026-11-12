@@ -10,8 +10,8 @@ header.custom-header {
     z-index: 1020;
 }
 
-/* UNIVERSITY NAME */
-.custom-header .university-name {
+/* PROJECT NAME */
+.custom-header .project-name {
     color: #0b1d3a;
     font-size: 19px;
     font-weight: 800;
@@ -19,8 +19,8 @@ header.custom-header {
     
 }
 
-/* UNIVERSITY TAGLINE */
-.custom-header .university-tagline {
+/* PROJECT TAGLINE */
+.custom-header .project-tagline {
     color: #b17b45;
     font-size: 11px;
     font-weight: 600;
