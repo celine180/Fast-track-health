@@ -32,7 +32,7 @@
 <form>
           <div class="mb-3">
             <label for="name" class="form-label">Your Full Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your name" minlength="[A-Za-z]+" title="Atleast two letters">
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" minlength="[A-Za-z]+" title="Atleast two letters"  oninput="this.value = this.value.replace(/[0-9]/g, '')">
             
           </div>
           <div class="mb-3">
