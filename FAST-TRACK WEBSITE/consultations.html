@@ -32,7 +32,7 @@
 <form>
           <div class="mb-3">
             <label for="name" class="form-label">Your Full Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" minlength="[A-Za-z]+" title="Atleast two letters">
             
           </div>
           <div class="mb-3">
@@ -41,13 +41,13 @@
           </div>
           <div class="mb-3">
             <label for="phone" class="form-label">Phone Number</label>
-            <input type="tel" class="form-control" id="phone" placeholder="+256 7xx xxx xxx" required>
+            <input type="tel" class="form-control" id="phone" placeholder="+256 7xx xxx xxx" required pattern="[0-9]{10}" minlength="10" maxlength="10">
           </div>
           <div class="mb-3">
             <label for="message" class="form-label">Message </label>
             <textarea class="form-control" id="message" rows="3" placeholder="Write your message here" required></textarea>
           </div>
-          <button type="submit" class="btn-solid theme-success">Send  Message</button>
+          <button type="submit" class="btn-solid theme-primary">Send  Message</button>
         </form>
       </div>
     </div>
