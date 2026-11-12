@@ -12,6 +12,7 @@
 </head>
 
 <body>
+   <div id="header"></div>  
   <div class="container-fluid p-3">
     <div class="row">
 
@@ -386,6 +387,21 @@
       document.getElementById('btnPatient').className = 'btn btn-light';
       document.getElementById('btnAdmin').className = 'btn btn-primary';
     }
+  </script>
+
+    <div id="footer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    fetch("header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("header").innerHTML = data;
+      });
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
   </script>
 </body>
 
