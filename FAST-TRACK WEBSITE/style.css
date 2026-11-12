@@ -24,7 +24,7 @@ body { background-color: #e1eae5; }
 .card-text {
     font-size: 48px; 
     font-weight: 900;
-    color: black;
+    color: solid black;
 }
 .card {
     background-color: rgb(235, 233, 240);
