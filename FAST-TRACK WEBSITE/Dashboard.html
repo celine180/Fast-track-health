@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fast Track Health - Dashboard</title>
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style_dashboard.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -16,12 +15,10 @@
   <div class="container-fluid p-3">
     <div class="row">
 
-      <!-- LEFT SIDEBAR -->
 <div class="col-md-3 mb-4">
 
     <div class="card border-0 shadow-sm rounded-4 p-3 sidebar-card h-100">
 
-        <!-- LOGO -->
         <div class="text-center mb-4 mt-2">
            
             <h5 class="fw-bold mt-2">Fast Track Health</h5>
@@ -30,7 +27,6 @@
 
         <hr>
 
-        <!-- MAIN MENU -->
         <small class="text-muted fw-bold mb-2">MAIN MENU</small>
 
         <a href="Dashboard.html"
@@ -65,7 +61,6 @@
 
         <hr>
 
-        <!-- ACCOUNT -->
         <small class="text-muted fw-bold mb-2">ACCOUNT</small>
 
         
@@ -75,18 +70,16 @@
             <i class="bi bi-box-arrow-left me-2"></i> Logout
         </a>
 
-      
-
     </div>
 
 </div>
-      <!-- RIGHT MAIN -->
+     
       <div class="col-md-9">
 
-        <!-- TOP NAVIGATION -->
+       
         <div class="d-flex justify-content-between align-items-center flex-wrap mb-4">
 
-          <!-- Welcome Heading -->
+          
           <div>
             <h4 class="fw-bold mb-1">
               Welcome to Fast Track Health
@@ -96,10 +89,10 @@
             </p>
           </div>
 
-          <!-- Notification and Profile -->
+          
           <div class="d-flex align-items-center gap-3">
 
-            <!-- Notification Bell -->
+           
             <button class="btn btn-light position-relative rounded-circle" style="width:45px; height:45px;"
               aria-label="Notifications">
 
@@ -110,7 +103,7 @@
               </span>
             </button>
 
-            <!-- Profile Icon -->
+            
             <a href="Register.html"
               class="btn btn-light rounded-circle d-flex align-items-center justify-content-center"
               style="width:45px; height:45px;" aria-label="My profile">
@@ -123,7 +116,6 @@
 
         </div>
 
-        <!-- SEARCH BAR -->
         <div class="mb-4" style="max-width:600px;">
           <div class="input-group">
             <span class="input-group-text bg-white">
@@ -134,8 +126,6 @@
           </div>
         </div>
        
-
-        <!-- PATIENT VIEW -->
         <div id="patientView">
           <div class="card p-3 main-card mb-3">
             <h5>Quick Actions</h5>
@@ -146,12 +136,12 @@
             </div>
           </div>
 
-          <!-- PATIENT OVERVIEW -->
+          
 <h5 class="fw-bold mb-3">My Health Overview</h5>
 
 <div class="row g-3 mb-4">
 
-    <!-- UPCOMING APPOINTMENTS -->
+    
     <div class="col-md-4">
         <div class="card border-0 shadow-sm rounded-4 p-3 h-100"
              style="background:#e8f2ff;">
@@ -172,8 +162,6 @@
         </div>
     </div>
 
-
-    <!-- REFILL REQUESTS -->
     <div class="col-md-4">
         <div class="card border-0 shadow-sm rounded-4 p-3 h-100"
              style="background:#e5f7ef;">
@@ -195,7 +183,7 @@
     </div>
 
 
-    <!-- MEDICAL RECORDS -->
+    
     <div class="col-md-4">
         <div class="card border-0 shadow-sm rounded-4 p-3 h-100"
              style="background:#f0eaff;">
@@ -210,23 +198,14 @@
                 <i class="bi bi-file-medical-fill fs-1"
                    style="color:#8064c9;"></i>
             </div>
-            <a href="Medical Records.html">Medical Records</a>
+            <a href="medical_records.html">Medical Records</a>
 
            
         </div>
     </div>
 
 </div>
-          
-<!-- PROFILE AND APPOINTMENT SECTION -->
-<div class="row g-3 mb-4">
 
-  
-                
-           
-
-
-    <!-- UPCOMING APPOINTMENT -->
     <div class="col-md-6">
         <div class="card border-0 shadow-sm rounded-4 p-4 h-100"
              style="background:#e8f5f0;">
@@ -288,7 +267,7 @@
     </div>
 
 </div>
-         <!-- DOCTORS LIST -->
+      
 <div class="card border-0 shadow-sm rounded-4 p-4 mb-4">
 
     <div class="d-flex justify-content-between align-items-center mb-3">
@@ -304,7 +283,7 @@
 
     <hr>
 
-    <!-- DOCTOR 1 -->
+    
     <div class="d-flex justify-content-between align-items-center py-3 border-bottom">
 
         <div class="d-flex align-items-center gap-3">
@@ -317,7 +296,7 @@
                 <h6 class="fw-bold mb-1">Dr. Lucky Irankunda</h6>
                 <small class="text-muted">ENT</small>
             </div>
-            <!-- UPCOMING APPOINTMENT -->
+            
             <div class="col-md-6 mb-3">
               <div class="card p-3 dark-green h-100">
                 <h5>Upcoming Appointment</h5>
@@ -333,7 +312,7 @@
         </span>
     </div>
 
-    <!-- DOCTOR 3 -->
+    
     <div class="d-flex justify-content-between align-items-center py-3">
 
         <div class="d-flex align-items-center gap-3">
@@ -355,7 +334,6 @@
 
 </div>
 
-        <!-- ADMIN VIEW - Hidden at first -->
         <div id="adminView" style="display:none;">
           <div class="card p-3 main-card mb-3">
             <h5>Admin Quick Actions</h5>
