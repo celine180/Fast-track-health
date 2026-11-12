@@ -32,7 +32,7 @@
 <form>
           <div class="mb-3">
             <label for="name" class="form-label">Your Full Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your name" minlength="[A-Za-z]+" title="Atleast two letters">
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" minlength="[A-Za-z]+" title="Atleast two letters"  oninput="this.value = this.value.replace(/[0-9]/g, '')">
             
           </div>
           <div class="mb-3">
@@ -54,6 +54,7 @@
   </div>
   <div id="footer"></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 <script>
   document.getElementById("consultForm").addEventListener("submit", function(e) {
     e.preventDefault(); // Stop the page from reloading
