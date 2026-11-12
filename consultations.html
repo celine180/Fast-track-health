@@ -32,7 +32,7 @@
 <form>
           <div class="mb-3">
             <label for="name" class="form-label">Your Full Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your name" minlength="2" pattern="[A-Za-z]+" title="Atleast two letters"  oninput="this.value = this.value.replace(/[0-9]/g, '')">
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" minlength="[A-Za-z]+" title="Atleast two letters">
             
           </div>
           <div class="mb-3">
@@ -66,14 +66,14 @@
     let message = document.getElementById("message").value;
 
     // 2. Build the WhatsApp message
-    let text = "Hello Fast Track Consult,\n\n" +
-               "Name: " + name + "\n" +
-               "Email: " + email + "\n" +
-               "Phone: " + phone + "\n" +
+    let text = "Hello Fast Track Consult,%0A%0A" +
+               "Name: " + name + "%0A" +
+               "Email: " + email + "%0A" +
+               "Phone: " + phone + "%0A" +
                "Message: " + message;
 
     // 3. Open WhatsApp with YOUR number
-    let myNumber = "256772206394"; // <-- CHANGE THIS TO YOUR NUMBER
+    let myNumber = "0772206394"; // <-- CHANGE THIS TO YOUR NUMBER
     window.open("https://wa.me/" + myNumber + "?text=" + text, "_blank");
   });
 </script>
