@@ -24,10 +24,10 @@ body { background-color: #e1eae5; }
 .card-text {
     font-size: 48px; 
     font-weight: 900;
-    color: solid black;
+    color: black;
 }
 .card {
-    background-color: rgb(235, 233, 240);
+    background-color: powderblue;
 }
 .card-image {
     border-radius: 15px;
