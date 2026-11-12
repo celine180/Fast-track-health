@@ -1,0 +1,37 @@
+body { background-color: #e1eae5; }
+.card-title {
+    font-size: 32px; 
+    font-weight: 400; 
+    color: blue; 
+    line-height: 1.2; 
+    text-transform: uppercase;
+} 
+.card-about-title {
+     font-size: 48px; 
+    font-weight: 900; 
+    color: purple; 
+    line-height: 1.2; 
+    text-transform: uppercase;
+} 
+.card-name {
+    color: blue;
+}
+.about-text {
+    font-size: 15px;
+    font-weight: 100;
+    color: solid black;
+}
+.card-text {
+    font-size: 48px; 
+    font-weight: 900;
+    color: black;
+}
+.card {
+    background-color: rgb(235, 233, 240);
+}
+.card-image {
+    border-radius: 15px;
+}
+.about-image {
+    border-radius: 100px;
+}
